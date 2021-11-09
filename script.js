@@ -6,7 +6,7 @@ const countriesContainer = document.querySelector('.countries');
 ///////////////////////////////////////
 
 function getCountryData() {
-    const request = fetch(`https://animechan.vercel.app/api/random`)
+    const request = fetch("https://restcountries.com/v3.1/name/peru")
 request.then((res) => {
    return res.json()
 }).then(data => console.log(data))
